@@ -2,10 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Button from '../ui/Button';
-import logo from '../../../public/logo.png';
-import lightMode from '../../../public/light-mode.png';
-import LanguageSwitcher from '../ui/LanguageSwitcher';
+import Button from '@/components/ui/Button';
+import logo from '@/public/emmanueljet-white 1.svg';
+import lightMode from '@/public/Icon-Button.svg';
+import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
 
 const navbar = () => {
   return (
@@ -15,8 +15,8 @@ const navbar = () => {
                 <Link href='/'>BOOK APPOINTMENT</Link>
                 <Link href='/about'>CONTACT</Link>
             </div>
-            <div className='2nd-nav'>
-                <Image src={logo} alt='Logo Image' />
+            <div className='2nd-nav flex h-[100px] w-[287px] items-center justify-center overflow-hidden rounded-b-[24px] border border-white/20 bg-white/[0.06] backdrop-blur-md'>
+                    <Image src={logo} alt='Logo Image' />
             </div>
             <div className='3rd-nav flex gap-5 justify-end items-center'>
                 <LanguageSwitcher />
