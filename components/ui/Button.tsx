@@ -1,4 +1,3 @@
-
 import type { ButtonHTMLAttributes } from 'react';
 
 type ButtonVariant = 'gradient' | 'solid';

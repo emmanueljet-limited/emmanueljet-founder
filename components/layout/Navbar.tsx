@@ -1,14 +1,14 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Button from '@/components/ui/Button';
-import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
-import { NAVBAR_TRANSLATIONS } from '@/constants/translations';
-import { useLanguage } from '@/contexts/LanguageContext';
 import lightMode from '@/public/Icon-Button.svg';
-import logo from '@/public/emmanueljet-white 1.svg';
+import logo from '@/public/emmanueljet-white-1.svg';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { NAVBAR_TRANSLATIONS } from '@/constants/translations';
+import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
 
 /**
  * Main application navigation bar with dynamic localization,
@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className='2nd-nav flex h-[100px] w-[287px] items-center justify-center overflow-hidden rounded-b-[24px] border border-white/20 bg-white/[0.06] backdrop-blur-md'>
         <Image
           src={logo}
-          alt='Emmanuel Jet Logo'
+          alt='emmanueljet logo'
           priority
         />
       </div>
