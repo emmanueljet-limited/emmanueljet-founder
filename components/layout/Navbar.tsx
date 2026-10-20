@@ -1,16 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Sun } from 'lucide-react'
 import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 import Button from '@/components/ui/Button';
-import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
-import { NAVBAR_TRANSLATIONS } from '@/constants/translations';
-import { useLanguage } from '@/contexts/LanguageContext';
 import lightMode from '@/public/Icon-Button.svg';
 import logo from '@/public/emmanueljet-white-1.svg';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { NAVBAR_TRANSLATIONS } from '@/constants/translations';
+import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
 
 /**
  * Main application navigation bar with responsive adaptation for all screen sizes,
@@ -68,15 +69,15 @@ const Navbar = () => {
         <div className='w-20 lg:hidden' aria-hidden='true' />
 
         {/* Signature Center Logo Notch */}
-        <div className='flex h-[60px] w-[160px] items-center justify-center overflow-hidden rounded-b-[20px] border border-white/20 bg-white/[0.06] shadow-lg shadow-purple-950/10 backdrop-blur-md sm:h-[72px] sm:w-[200px] sm:rounded-b-[22px] lg:h-[96px] lg:w-[287px] lg:rounded-b-[24px]'>
+        <div className='flex h-15 w-40 items-center justify-center overflow-hidden rounded-b-[20px] border border-white/20 bg-white/6 shadow-lg shadow-purple-950/10 backdrop-blur-md sm:h-18 sm:w-50 sm:rounded-b-[22px] lg:h-24 lg:w-71.75 lg:rounded-b-3xl'>
           <Link
             href='/'
-            aria-label='Emmanuel Jet homepage'
+            aria-label='emmanuel-jet homepage'
             className='flex items-center justify-center transition-opacity hover:opacity-90 focus-visible:rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500'
           >
             <Image
               src={logo}
-              alt='Emmanuel Jet logo'
+              alt='emmanuel-jet logo'
               priority
               className='h-auto w-24 sm:w-28 lg:w-36'
             />
@@ -91,7 +92,11 @@ const Navbar = () => {
             aria-label='Toggle color theme'
             className='flex h-10 w-10 items-center justify-center rounded-full transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500'
           >
-            <Image src={lightMode} alt='' aria-hidden='true' />
+            <Sun
+              size={24}
+              strokeWidth={1.5}
+              aria-hidden="true"
+            />
           </button>
           <Button variant='gradient'>{translations.chatWithJ2}</Button>
         </div>

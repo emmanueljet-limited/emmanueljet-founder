@@ -1,5 +1,5 @@
-import MeetJet from '@/components/sections/hero/MeetJet';
 import JetImg from '@/components/sections/hero/JetImg';
+import MeetJet from '@/components/sections/hero/MeetJet';
 import JetAbout from '@/components/sections/hero/JetAbout';
 import HeroScrollMeter from '@/components/sections/hero/HeroScrollMeter';
 

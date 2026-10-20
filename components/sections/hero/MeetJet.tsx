@@ -10,7 +10,7 @@ const MeetJet = () => {
         MEET
       </p>
 
-      <h1 className='jet-blink m-0 text-7xl font-black leading-[0.85] tracking-tight text-transparent [-webkit-text-stroke:1.5px_white] sm:text-8xl sm:[-webkit-text-stroke:2px_white] md:text-9xl lg:text-[10rem] xl:text-[13rem] 2xl:text-[15rem]'>
+      <h1 className='blink m-0 text-7xl font-black leading-[0.85] tracking-tight text-transparent [-webkit-text-stroke:1.5px_white] sm:text-8xl sm:[-webkit-text-stroke:2px_white] md:text-9xl lg:text-[10rem] xl:text-[13rem] 2xl:text-[15rem]'>
         JET
       </h1>
     </div>

@@ -26,7 +26,7 @@ body {
 }
 
 
-@keyframes jet-pulse {
+@keyframes pulse {
   0%, 85%, 100% {
     color: transparent;
     -webkit-text-stroke: 2px white;
@@ -57,7 +57,7 @@ body {
   }
 }
 
-.jet-blink {
-  animation: jet-pulse 8s ease-in-out infinite;
+.blink {
+  animation: pulse 8s ease-in-out infinite;
 }
 

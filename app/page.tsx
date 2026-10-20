@@ -15,13 +15,7 @@ const Home = () => {
         <Hero />
       </main>
 
-      <div
-        className='pointer-events-none absolute inset-0 -z-10'
-        style={{
-          background:
-            'radial-gradient(circle at center, #ffffff21 0%, transparent 60%)',
-        }}
-      />
+      <div className='pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,#ffffff21_0%,transparent_60%)]' />
     </>
   );
 };
