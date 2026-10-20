@@ -2,8 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Sun } from 'lucide-react'
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 import Button from '@/components/ui/Button';
@@ -95,7 +94,7 @@ const Navbar = () => {
             <Sun
               size={24}
               strokeWidth={1.5}
-              aria-hidden="true"
+              aria-hidden='true'
             />
           </button>
           <Button variant='gradient'>{translations.chatWithJ2}</Button>

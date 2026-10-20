@@ -22,7 +22,7 @@ const JetImg = () => {
         width={800}
         height={800}
         priority
-        className='h-auto w-full max-w-[240px] object-contain transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer sm:max-w-[300px] md:max-w-[380px] lg:max-w-[440px] xl:max-w-[500px]'
+        className='h-auto w-full max-w-60 object-contain transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer sm:max-w-75 md:max-w-95 lg:max-w-110 xl:max-w-125'
       />
     </div>
   );

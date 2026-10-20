@@ -15,7 +15,7 @@ const JetAbout = () => {
           loop
           playsInline
           aria-label='Showcase preview video'
-          className='h-auto w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[360px] xl:max-w-[400px]'
+          className='h-auto w-full max-w-65 sm:max-w-75 md:max-w-85 lg:max-w-90 xl:max-w-100'
           width={400}
           height={400}
         />
